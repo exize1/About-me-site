@@ -1,0 +1,269 @@
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    height: 1000vh;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6097BF;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 60%;
+    padding: 1rem 5rem;
+}
+
+
+
+/* .nav-btn:after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    height: 0.2rem;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+    bottom: 0;
+    transition: .3s ease transform;
+} */
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color:#6097BF ;
+  }
+
+li {
+    display: inline;
+  }
+
+a{
+    color: aliceblue;
+}
+
+li a {
+    padding: 8px;
+    font-size: 2rem;
+    text-decoration: none;
+  }
+
+li a:hover{
+    background-color: #70a3c7;
+}
+
+
+#title{
+    margin: 0;
+    font-size: 5rem;
+    text-transform: none;
+}
+
+
+.hero{
+    height: 100vh;
+    flex-direction: row;
+    padding-left: 10%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #6097BF;
+}
+
+.white-title{
+    color: aliceblue;
+    font-size: 650%;
+    font-weight: 300;
+    margin: 0;
+    width: 90%;
+    line-height: 130%;
+}
+
+.me{
+    color: aliceblue;
+    font-size: 130%;
+    letter-spacing: 0.8rem;
+    margin-top: 0;
+}
+
+.portfolio-btn{
+    background-color: rgba(34, 113, 204, 0.534);
+    font-size: 1.3rem;
+    letter-spacing: 0.8rem;
+    color: aliceblue;
+    border: #6097BF 1px solid;
+    width: 43%;
+    height: 10vh;
+	transition: all .3s ease;
+}
+
+.portfolio-btn:hover{
+    background-color: rgba(34, 113, 204, 0.216);
+    border-color: aliceblue;
+}
+
+.control-png-location{
+    display: flex;
+    align-items: center;
+    padding-right: 3vw;
+    width: 80%;
+    height: 90%;
+}
+
+#left-png{
+    background-image: url(./software-developer-left-side.png);
+    transform: translateX(2%)
+}
+
+#right-png{
+    background-image: url(./software-developer-right-side.png);
+    transform: translateX(-20%)
+}
+
+.photo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition-duration: 1.5s;
+    width: 90%;
+    height: 80%;
+}   
+
+#about{
+    height: 100vh;
+    flex-direction: row;
+    padding-left: 15%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color:aliceblue;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-title{
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    margin: 0;
+}
+
+
+.about-description{
+    font-size: 150%;
+    line-height: 3rem !important;
+    font-weight: 300;
+    margin: 0;
+    width: 90%;
+    line-height: 130%;
+
+}
+
+.control-png2-location{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10vw;
+    width: 130%;
+    height: 80%;
+}
+
+#second-png{
+    background-image: url(./freelance-work-g4f8fa6124_1920-removebg-preview.png);
+    background-size: cover;
+    transition-duration: 0s;
+}
+
+.resume-btn{
+    background-color: rgb(136, 136, 136);
+    color: aliceblue;
+    border: #6097BF 1px solid;
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    margin-top: 3vh;
+    font-size: 1.4rem;
+    letter-spacing: 0.3rem;
+    width: 43%;
+    height: 8vh;
+	transition: all .3s ease; 
+}
+
+#services{
+    height: 100vh;
+    /* flex-direction: row; */
+    padding: 5% 2%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    background-color:aliceblue;
+    font-family: 'Playfair Display', serif;
+}
+
+.services-title{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 4rem;
+    margin: 0;
+}
+
+.services-description{
+    font-size: 130%;
+    line-height: 3rem !important;
+    font-weight: 300;
+    margin: 0vh 30vw;
+    line-height: 130%;
+}
+
+.services-info{
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+}
+
+.service{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 30vh;
+}
+
+.front-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-2{
+    background-image: url(./screen-dev-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    width: 3vw;
+    height: 6vh;
+}
