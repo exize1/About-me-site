@@ -212,13 +212,12 @@ li a:hover{
 }
 
 #services{
-    height: 100vh;
-    /* flex-direction: row; */
+    height: 80vh;
     padding: 5% 2%;
     flex-direction: column;
     display: flex;
     text-align: center;
-    background-color:aliceblue;
+    background-color:rgb(255, 255, 255);
     font-family: 'Playfair Display', serif;
 }
 
@@ -240,30 +239,117 @@ li a:hover{
 
 .services-info{
     display: flex;
-    justify-content: center;
     margin: 0 10%;
 }
 
 .service{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    width: 20vw;
-    height: 30vh;
+    background-color: transparent;
+    width: 30vw;
+    height: 45vh;
+    border: none;
+    perspective: 1000px;
+}
+
+.service:hover .service-card {
+    transform: rotateY(180deg);
+  }
+  
+
+.service-card{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+.service-front, .service-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.service-front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 230, 252);
+    color: black;
+}
+
+.service-back{
+    background-color: rgb(221, 230, 252);
+    color: white;
+    transform: rotateY(180deg);
 }
 
 .front-title{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#middle-card .front-title{
+    color: white;
+}
+
+#middle-card{
+    background-image: url(https://www.ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/avi-richards-183715-unsplash-567934383.jpg?itok=3UIujf91);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.fa-laptop-code{
+    color: white;
+    font-size: 5rem;
+}
+
+.fa-discord{
+    font-size: 5rem;
+}
+
+.fa-gears{
+    font-size: 5rem;
+}
+
+#hire-me{
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 3vh 1vw;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
 }
 
-.icon-2{
-    background-image: url(./screen-dev-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.hire-me-title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+}
 
-    width: 3vw;
-    height: 6vh;
+.hire-me-btn{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 2rem 3rem;
+    margin: 10px 41vw 0 41vw;
+    display: inline-block ;  
+    border: none;  
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.267);
+    letter-spacing: .2rem;
+    margin-top: 10px;
+    color: whitesmoke;
+    font-size: 1.6rem;
+    transition-duration: 0.5s;
+}
+
+.hire-me-btn:hover{
+    background-color: black;
 }
