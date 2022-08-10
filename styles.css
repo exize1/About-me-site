@@ -6,7 +6,6 @@ html {
 
 body{
     margin: 0;
-    height: 1000vh;
 }
 
 button{
@@ -212,7 +211,7 @@ li a:hover{
 }
 
 #services{
-    height: 80vh;
+    height: 50rem;
     padding: 5% 2%;
     flex-direction: column;
     display: flex;
@@ -327,18 +326,21 @@ li a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .hire-me-title{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.2rem;
+    width: fit-content;
+
 }
 
 .hire-me-btn{
     font-family: 'Times New Roman', Times, serif;
     padding: 2rem 3rem;
-    margin: 10px 41vw 0 41vw;
+    margin-top: 10px ;
     display: inline-block ;  
     border: none;  
     text-transform: uppercase;
@@ -348,8 +350,46 @@ li a:hover{
     color: whitesmoke;
     font-size: 1.6rem;
     transition-duration: 0.5s;
+    cursor: pointer;
+    width: fit-content;
+
 }
 
 .hire-me-btn:hover{
     background-color: black;
+}
+
+.contact{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 20vh;
+}
+
+.footer-title{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 7rem;
+}
+
+.contact-info{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    padding-top: 1.5rem ;
+    margin: 0;
+}
+
+.social-media{
+    margin-bottom: 0.5vh;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5vh;
+    font-size: 3rem;
+    width: 150px;
 }
