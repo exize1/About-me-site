@@ -1,128 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aboutme -Amit El Al</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500;700&display=swap"
-        rel="stylesheet">
-        <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/19f07b854f.js" crossorigin="anonymous"></script>
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style_bootstrap5.css">
+    
 </head>
-
 <body>
-    <section class="container">
-        <div class="navbar">
-            <div class="left-side">
-                <a href="#hero">
-                    <h1 id="title">CyberPro</h1>
-                </a>
-            </div>
-            <div class="right-side">
-                <input id="menu-toggle" type="checkbox" />
-                <label class='menu-button-container' for="menu-toggle">
-                    <div class='menu-button'></div>
-                </label>
-                <ul class="menu">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#hire-me">Hire Me</a></li>
-                </ul>
+    <nav class="navbar fixed-top navbar-expand-md">
+        <div class="container-fluid align-items-center">
+            <a class="navbar-brand" href="#">
+                <img src="brand_icon-removebg-preview.png" alt="" width="30" height="24">
+            Exize
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hire-me">Hire Me</a>
+                    </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="hero">
+        <div class="container-sm">
+            <div class="row">
+                <div class="col-sm align-self-center">
+                    <p class="white-title">Hire me</p>
+                    <p id="lower" class="white-title">To bring your ideas to life</p>
+                    <p class="me">I AM A WEB DESIGNER</p>
+                    <button class="portfolio-btn">Protfolio</button>
+                </div>
+                <div class="col-sm d-flex">
+                    <img src="./software-developer-left-side.png" class="img-fluid" alt="">
+                    <img src="./software-developer-right-side.png" class="img-fluid" alt="">
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="hero">
-        <div class="hire-me">
-            <p id="upper" class="white-title">Hire me</p>
-            <p id="lower" class="white-title">To bring your ideas to life</p>
-            <p class="me">I AM A WEB DESIGNER</p>
-            <button class="portfolio-btn">PORTFOLIO</button>
-        </div>
-        <div class="control-png-location">
-            <div id="left-png" class="photo"></div>
-            <div id="right-png" class="photo"></div>
-        </div>
-
-    </section>
     <section id="about">
-        <div class="about-me">
-            <h1 class="about-title">About me</h1>
-            <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit
-                quidem ullam voluptates repellendus explicabo placeat, expedita ratione saepe eaque dolorum sed
-                deleniti, odit numquam, nostrum tempore quos corrupti rem.
-            </p>
-            <button class="resume-btn">download resume</button>
-        </div>
-        <div class="control-png2-location">
-            <div id="second-png" class="photo"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm align-self-center">
+                    <h1 class="about-title">About me</h1>
+                    <p class="about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi suscipit
+                        quidem ullam voluptates repellendus explicabo placeat, expedita ratione saepe eaque dolorum sed
+                        deleniti, odit numquam, nostrum tempore quos corrupti rem.
+                    </p>
+                    <button type="button" class="btn btn-secondary resume-btn">download resume</button>        
+                </div>
+                <div class="col-sm">
+                        <img src="./freelance-work-g4f8fa6124_1920-removebg-preview.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
+
     <section id="services">
-        <div class="services-header">
-            <h1 class="services-title">services</h1>
-            <p class="services-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni temporibus,
-                omnis illum ipsa reiciendis illo eos odio possimus voluptatibus architecto.
-            </p>
+        <div class="row">
+            <div class="col-sm">
+                <h1 class="services-title">services</h1>
+                <p class="services-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni temporibus,
+                    omnis illum ipsa reiciendis illo eos odio possimus voluptatibus architecto.
+                </p>
+            </div>
         </div>
-        <div class="services-info">
-            <div class="service">
-                <div class="service-card">
-                    <div class="service-front">
-                        <i class="fa-brands fa-discord"></i>
-                        <h1 class="front-title">Discord Bots</h1>
-                    </div>
-                    <div class="service-back">
-                        <h1 class="back-title">Discord Bots</h1>
-                        <p class="back-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
-                            dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad,
-                            quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos,
-                            quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit</p>
-                    </div>
-                </div>
-            </div>
-            <div class="service">
-                <div class="service-card">
-                    <div id="middle-card" class="service-front">
-                        <i class="fa fa-laptop-code"></i>
-                        <h1 class="front-title">Front End Dev</h1>
-                    </div>
-                    <div class="service-back">
-                        <h1 class="back-title">Front End Dev</h1>
-                        <p class="back-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
-                            dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad,
-                            quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos,
-                            quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit</p>
+        <div class="row">
+            <div class="col-sm">
+                <div class="service">
+                    <div class="service-card">
+                        <div class="service-front">
+                            <i class="fa-brands fa-discord"></i>
+                            <h1 class="front-title">Discord Bots</h1>
+                        </div>
+                        <div class="service-back">
+                            <h1 class="back-title">Discord Bots</h1>
+                            <p class="back-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
+                                dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad,
+                                quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos,
+                                quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="service">
-                <div class="service-card">
-                    <div class="service-front">
-                        <i class="fa-solid fa-gears"></i>
-                        <h1 class="front-title">Back End Dev</h1>
+            <div class="col-sm">
+                <div class="service">
+                    <div class="service-card">
+                        <div id="middle-card" class="service-front">
+                            <i class="fa fa-laptop-code"></i>
+                            <h1 class="front-title">Front End Dev</h1>
+                        </div>
+                        <div class="service-back">
+                            <h1 class="back-title">Front End Dev</h1>
+                            <p class="back-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
+                                dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad,
+                                quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos,
+                                quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit</p>
+                        </div>
                     </div>
-                    <div class="service-back">
-                        <h1 class="back-title">Back End Dev</h1>
-                        <p class="back-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
-                            dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad,
-                            quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos,
-                            quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit</p>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="service">
+                    <div class="service-card">
+                        <div class="service-front">
+                            <i class="fa-solid fa-gears"></i>
+                            <h1 class="front-title">Back End Dev</h1>
+                        </div>
+                        <div class="service-back">
+                            <h1 class="back-title">Back End Dev</h1>
+                            <p class="back-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum aut
+                                dolor voluptatem incidunt placeat impedit laboriosam quam consequatur quasi nihil libero ad,
+                                quaerat, alias illum excepturi. Iste quo repellendus consequuntur asperiores dignissimos,
+                                quaerat obcaecati officiis repudiandae fugit tenetur nulla impedit</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="hire-me">
         <h1 class="hire-me-title">Hire me to build your dream app</h1>
-        <button class="hire-me-btn">hire me !!</button>
+        <button type="button" class="btn btn-secondary hire-me-btn">hire me !!</button>
     </section>
+
     <footer class="contact">
         <h1 class="footer-title">contact with me</h1>
         <p class="contact-info">Email: amio121212@gmail.com</p>
@@ -135,6 +157,9 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
     </footer>
-</body>
 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
 </html>

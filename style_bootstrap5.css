@@ -1,0 +1,295 @@
+.navbar{
+    background-color: #6097BF;
+}
+
+#hero{
+    height: 100vh;
+    padding-top: 5rem;
+    background-color: #6097BF;
+}
+
+.white-title{
+    color: aliceblue;
+    font-size: 350%;
+    margin: 0;
+    width: 100%;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+
+.me{
+    color: aliceblue;
+    font-size: 80%;
+    letter-spacing: 0.4rem;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.portfolio-btn{
+    background-color: rgba(34, 113, 204, 0.534);
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem;
+    color: aliceblue;
+    border: #6097BF 1px solid;
+    width: 43%;
+    height: 10vh;
+	transition: all .3s ease;
+    text-transform: uppercase;
+}
+
+.portfolio-btn:hover{
+    background-color: rgba(34, 113, 204, 0.216);
+    border-color: aliceblue;
+}
+
+#about{
+    height: 100vh;
+    background-color:aliceblue;
+    font-family: 'Playfair Display', serif;
+    /* flex-direction: row; */
+    /* padding-left: 15%; */
+    /* justify-content: center; */
+    align-items: center;
+    display: flex;
+}
+
+.about-title{
+    text-transform: uppercase;
+    letter-spacing: 0.1.5rem;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.about-description{
+    font-size: 100%;
+    line-height: 2rem !important;
+    font-weight: 300;
+    margin: 0;
+    width: 90%;
+    line-height: 130%;
+}
+
+.resume-btn{
+    background-color: rgb(136, 136, 136);
+    font-family: 'Playfair Display', serif;
+    text-transform: uppercase;
+    margin-top: 3vh;
+    letter-spacing: 0.15rem;
+    width: 43%;
+	transition: all .3s ease; 
+}
+
+.photo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition-duration: 1.5s;
+    width: 90%;
+    height: 80%;
+}   
+
+.control-png2-location{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 10vw;
+    width: auto;
+    height: auto;
+}
+
+#second-png{
+    background-image: url(./freelance-work-g4f8fa6124_1920-removebg-preview.png);
+    background-size: cover;
+    transition-duration: 0s;
+}
+
+
+#services{
+    height: 40rem;
+    padding: 5% 2%;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    background-color:rgb(255, 255, 255);
+    font-family: 'Playfair Display', serif;
+}
+
+.services-title{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.services-description{
+    font-size: 100%;
+    line-height: 2rem !important;
+    font-weight: 300;
+    margin: 0 15vw 4vh 15vw;
+    line-height: 120%;
+}
+
+.service{
+    align-items: center;
+    background-color: transparent;
+    width: 30vw;
+    height: 50vh;
+    border: none;
+    perspective: 1000px;
+}
+
+.service:hover .service-card {
+    transform: rotateY(180deg);
+  }
+
+.service-card{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+}
+
+.service-front, .service-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+
+.service-front{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 230, 252);
+    color: black;
+}
+
+.service-back{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(221, 230, 252);
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.front-title{
+    margin-top: 0.5rem;
+    font-size: 1.9rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#middle-card .front-title{
+    color: white;
+}
+
+#middle-card{
+    background-image: url(https://www.ica.coop/sites/default/files/styles/full_image/public/news-item-fullimage/avi-richards-183715-unsplash-567934383.jpg?itok=3UIujf91);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.fa-laptop-code{
+    color: white;
+    font-size: 5rem;
+}
+
+.fa-discord{
+    font-size: 5rem;
+}
+
+.fa-gears{
+    font-size: 5rem;
+}
+
+.back-title{
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.back-description{
+    font-size: 0.8rem;
+    margin: 1rem 2rem;
+    color: black;
+}
+
+
+
+#hire-me{
+    background-color: rgba(0, 0, 0, 0.212);
+    padding: 3vh 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me-title{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2rem;
+    width: fit-content;
+
+}
+
+.hire-me-btn{
+    font-family: 'Times New Roman', Times, serif;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-size: 0.8rem;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.hire-me-btn:hover{
+    background-color: black;
+}
+
+.contact{
+    background-color: black;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 20vh;
+}
+
+.footer-title{
+    font-size: rem;
+    text-transform: uppercase;
+    margin-top: 3.5rem;
+}
+
+.contact-info{
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    padding-top: 0.6rem ;
+    margin: 0;
+}
+
+.social-media{
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+.social-media-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3.5rem;
+    font-size: 1.5rem;
+    width: 150px;
+}
+
+
